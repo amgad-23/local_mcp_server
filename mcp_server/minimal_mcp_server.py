@@ -61,6 +61,8 @@ def echo(text: str) -> str:
     str
         The same text you passed in.
     """
+
+    print(f"Echoing: {text}")
     return text
 
 if __name__ == "__main__":
@@ -69,4 +71,4 @@ if __name__ == "__main__":
     # localhost:8000, uncomment the line below and provide the host, port,
     # and transport explicitly.
     # mcp.run(transport="streamable-http", host="0.0.0.0", port=8000, path="/mcp")
-    mcp.run()
+    mcp.run(transport="streamable-http", host="127.0.0.1", port=8000, path="/mcp")
